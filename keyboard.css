@@ -1,3 +1,82 @@
 body{
-    margin-top: 70px;
+    background-color: gainsboro;
+}
+.main{
+    margin: 100px 0 0 150px;
+}
+.row{
+    width: 100%;
+    height:60px;
+}
+.one,.four,.five,.six{
+    margin: 10px 0 0 0;
+}
+button{
+    color: wheat;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    border-color: black;
+    border-radius: 25%;
+    box-shadow: 5px 5px 10px rgb(87, 32, 32);
+}
+button:active{
+    box-shadow: 1px 1px 2px gray;
+}
+.butn{
+    width:54px;
+    height: 36px;
+    font-size: 10px;
+    border-radius: 22%;
+}
+#tilda{
+    width: 30px;
+    border-radius: 10px;
+}
+
+#backspace{
+    width: 120px;
+    border-radius: 10px;
+}
+#tab{
+   width: 70px; 
+   border-radius: 10px;
+}
+#slash{
+    width: 80px;
+    border-radius: 10px;
+}
+#caps{
+    width: 80px;
+    border-radius: 10px;
+}
+#enter{
+    width: 135px;
+    border-radius: 14px;
+}
+#shiftone{
+    width: 120px;
+    border-radius: 10px;
+}
+#shifttwo{
+    width: 160px;
+    border-radius: 10px;
+}
+#space{
+    width: 373px;
+    border-radius: 10px;
+}
+.six{
+    position: relative;
+}
+.arrows{
+    margin-top: 15px;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+}
+.playbtn{
+    width: 54px;
+    height: 25px;
+    border-radius: 8px;
 }
