@@ -8,10 +8,13 @@ body{
     width: 100%;
     height:60px;
 }
-.one,.four,.five,.six{
-    margin: 10px 0 0 0;
+.one,.two,.three,.four,.five,.six{
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    align-items: center;
 }
 button{
+    margin: 3px;
     color: wheat;
     background-color: black;
     width: 60px;
@@ -70,10 +73,10 @@ button:active{
     position: relative;
 }
 .arrows{
-    margin-top: 15px;
-    position: absolute;
+    position: relative;
     display: inline-block;
     text-align: center;
+
 }
 .playbtn{
     width: 54px;
