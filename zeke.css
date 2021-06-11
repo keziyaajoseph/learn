@@ -1,0 +1,158 @@
+body{
+    font-family: 'Chewy', cursive;
+    background: url(pictures/sphynx.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: rgba(30, 68, 68, 0.4);
+    position: relative;
+}
+h1{
+    padding: 20px;
+    height: auto;
+    width: auto;
+    color: aliceblue;
+    font-size: 50px;
+    display: inline;
+}
+.rightnav{
+    float: right;
+    position: relative;
+    text-align: center;
+    width: 40%;
+    height: 80px;
+    
+}
+button{
+    margin: 10px;
+    padding: 3px;
+    text-align: center;
+    margin-top: 15px;
+    width: 150px;
+    height: 50px;
+    background-color: teal;
+    color: wheat;
+    border: thistle;
+    border-radius: 10px;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 20px;
+}
+button:hover{
+    background-color: transparent;
+    color: teal;
+}
+p.quote{
+    margin-top: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: whitesmoke;
+    display: inline-block;
+}
+p.quote{
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function:linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    50%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
+.formcontainer{
+    position: relative;
+    float: right;
+    margin-top: 20px;
+    margin-right: 80px;
+    width: 360px;
+    height: 70vh;
+    text-align: center;
+    transition: 1.3s;
+    transform-style: preserve-3d;
+}
+.formone,.formtwo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    background-color: rgba(30, 68, 68, 0.4);
+    border-radius: 8px;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+input {
+    flex-basis: 40px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.747); 
+    color: black;       
+    text-align: center;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+::placeholder {
+    color: rgba(3, 8, 8, 0.4);
+    opacity: 0.9;
+    text-align: center;
+}
+input.submit{
+    cursor: pointer;
+    align-self: center;
+    width: 150px;
+    background-color: teal;
+    border: 1px solid;
+    border-color: blanchedalmond;
+    color: wheat;
+}
+.submit:hover{
+    background-color: transparent;
+    color: teal;
+    border-color: teal;
+}
+p{
+    color: whitesmoke;
+    font-size: 18px;
+}
+a {
+    cursor: pointer;
+    color: rgba(63, 185, 73, 0.986);
+    text-decoration: underline;
+}
+.formtwo{
+    height: 100%;
+    transform: translate(-50%,-50%) rotateY(180deg);
+}
+.clear{
+    clear: both;
+}
+#log:checked ~ .formcontainer{
+    transform: rotateY(0deg);
+}
+#reg:checked ~ .formcontainer{
+    transform: rotateY(180deg);
+}
+#log{
+    display: none;
+}
+#reg{
+    display: none;
+}
+
