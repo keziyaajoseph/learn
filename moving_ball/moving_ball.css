@@ -1,0 +1,47 @@
+.check{
+    background-color: teal;
+    font-size: 50px;
+    position: fixed;
+    top:20%;
+    right:50%;
+    border-radius: 25px;
+}
+.box, .boxtwo, .boxthree, .boxfour, .boxfive, .boxsix{
+    opacity: 0;
+}
+
+.box:checked ~ div.ball{
+    right:83%;
+    transition: 0.6s;
+}
+.boxtwo:checked ~ div.ball{
+    right: 76.5%;
+    transition: 0.6s;
+}
+.boxthree:checked ~ div.ball{
+    right: 70%;
+    transition: 0.6s;
+}
+.boxfour:checked ~ div.ball{
+    right: 63%;
+    transition: 0.6s;
+}
+.boxfive:checked ~ div.ball{
+    right: 56.5%;
+    transition: 0.6s;
+}
+.boxsix:checked ~ div.ball{
+    right: 50%;
+    transition: 0.6s;
+}
+.ball{
+    height:57px;
+    width: 57px;
+    border-radius: 50%;
+    background-color: brown;
+    position: fixed;
+    top:20%;
+    right:83%;
+}
+
+

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600&display=swap');
+
+:body {--primary-color: #FFE120;
+--font-family:'Encode Sans', sans-serif;}
+
+
+.theme-option{
+  position: fixed;
+  right: 5%;
+  top:2%;
+  color:#fff;
+  z-index: 999;
+}
+.theme-checkbox{
+  opacity: 0;
+  position: absolute;
+}
+.theme-checkbox:checked ~ {
+    .theme-label{
+  background-color: #485460;
+  }
+}
+.theme-label .ball{
+  background: var(primary-color);
+  transform: translateX(37px);
+}
+  
